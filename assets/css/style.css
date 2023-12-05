@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  header{
+    background-color: #86A789;
+    color: #113946;
+  }
+  
+  header h1, nav{
+    display: inline-block;
+    margin: 10px;
+  }
+  header h1{
+    width: 70%;
+    padding: 10px;
+  }
+  nav a{
+    width: 30%;
+    padding: 40px;
+    text-decoration: none;
+    color: #113946;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .hero-banner{
+    background-color: #B2C8BA;
+    display: flex;
+    height: 500px;
+  }
+  
+  .hero-banner div{
+    margin: 20px 50px;
+    padding: 40px;
+    font-size: 20px;
+  }
+
+  .hero-banner img{
+    border-radius: 20rem;
+    height: 400px;
+    width: 400px;
+  }
+
+  .hero-banner #my-summary{
+    padding: 80px;
+    color: #113946;
+  }
+
+  .page-wrapper{
+    margin: 10px;
+  }
+
+  #work{
+    flex: 4;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    /* border-style: solid; */
+    /* border-width: 1px; */
+    border: 3px solid #113946;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    flex: 0 0 400px;
+  }
+
+  .card header {
+    padding: 20px;
+    background-color: #113946;
+    border-bottom: 5px solid #86A789;
+    color: #86A789;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  
+
+  
+  
+ 
