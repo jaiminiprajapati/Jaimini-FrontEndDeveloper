@@ -53,7 +53,12 @@
   .hero-banner{
     background-color: #B2C8BA;
     display: flex;
-    height: 500px;
+    flex-direction: row;
+    justify-content: flex-start;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   
   /* Targets the div element within the class "hero-banner" */
@@ -61,12 +66,19 @@
     margin: 20px 50px;
     padding: 40px;
     font-size: 20px;
+    @media (max-width: 600px) {
+      margin: 0;
+    }
   }
 /* Targets the img element within the class "hero-banner" */
   .hero-banner img{
     border-radius: 20rem;
     height: 400px;
     width: 400px;
+    @media (max-width: 600px) {
+      height: 200px;
+      width: 200px;
+    }
   }
 
   /* Targets the id "my-summary" within the class "hero-banner" */
@@ -74,34 +86,72 @@
     padding: 80px;
     color: #113946;
   }
+   /* Targets the class "page-section" */
+  .page-section{
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  /* Targets all the h2 elements within the website */
+  .header-column{
+    width: 30%;
+  }
+
+  .para-column{
+    width: 70%;
+  }
+
+  @media (max-width: 600px) {
+    .header-column, .para-column{
+      width: 100%;
+    }
+  }
 
   /* Targets the class "page-wrapper" */
   .page-wrapper{
     margin: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   /* Applies styles to the id "work" */
   #work{
-    flex: 4;
+    /* flex: 4; */
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  }
+
+  .card-column{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      width: 100%;
+    }
   }
 
   /* Applies styles to the class "card" */
   .card {
     border: 3px solid #113946;
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    flex: 0 0 400px;
+    flex: 0 0 calc(25% - 20px);
+    margin: 0;
+    @media (max-width: 600px) {
+      flex: 0 0 100%;
+    }
   }
+
+ 
 
   /* Targets the header element within the class "card" */
   .card header {
-    padding: 20px;
+    padding: 4px 8px;
     background-color: #113946;
     border-bottom: 5px solid #86A789;
     color: #86A789;
@@ -114,10 +164,14 @@
 
   /* Applies styling to the footer */
   footer{
+    display: flex;
+    justify-content: center;
     background-color: #86A789;
     color: #113946;
     text-align: center;
   }
+
+
   
 
   
