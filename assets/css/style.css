@@ -1,7 +1,9 @@
+/* Target all elements in the webpage  */
 * {
     box-sizing: border-box;
   }
   
+  /* Targets the entire body of the website */
   body {
     margin: 0;
     padding: 0;
@@ -9,27 +11,35 @@
     line-height: 1.5;
   }
   
+  /* Targets all the heading elements on the page */
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
   
+  /* Targets all the paragraph elements on the page */
   p {
     margin: 0;
   }
   
+  /* Styling for the header section */
   header{
     background-color: #86A789;
     color: #113946;
   }
   
+  /* Applies styles to the h1 element within the header and the nav element */
   header h1, nav{
     display: inline-block;
     margin: 10px;
   }
+  
+  /* Applies styles to the h1 element within the header */
   header h1{
     width: 70%;
     padding: 10px;
   }
+
+  /* Targets the anchor element with the nav element */
   nav a{
     width: 30%;
     padding: 40px;
@@ -39,33 +49,38 @@
     font-weight: bold;
   }
   
+  /* Targets the class "hero-banner" */
   .hero-banner{
     background-color: #B2C8BA;
     display: flex;
     height: 500px;
   }
   
+  /* Targets the div element within the class "hero-banner" */
   .hero-banner div{
     margin: 20px 50px;
     padding: 40px;
     font-size: 20px;
   }
-
+/* Targets the img element within the class "hero-banner" */
   .hero-banner img{
     border-radius: 20rem;
     height: 400px;
     width: 400px;
   }
 
+  /* Targets the id "my-summary" within the class "hero-banner" */
   .hero-banner #my-summary{
     padding: 80px;
     color: #113946;
   }
 
+  /* Targets the class "page-wrapper" */
   .page-wrapper{
     margin: 10px;
   }
 
+  /* Applies styles to the id "work" */
   #work{
     flex: 4;
     background-color: #fff;
@@ -75,9 +90,8 @@
     justify-content: center;
   }
 
+  /* Applies styles to the class "card" */
   .card {
-    /* border-style: solid; */
-    /* border-width: 1px; */
     border: 3px solid #113946;
     border-radius: 10px;
     padding: 10px;
@@ -85,6 +99,7 @@
     flex: 0 0 400px;
   }
 
+  /* Targets the header element within the class "card" */
   .card header {
     padding: 20px;
     background-color: #113946;
@@ -92,10 +107,17 @@
     color: #86A789;
   }
 
+  /* Targets the image element within the class "card" */
   .card img {
     width: 100%;
   }
 
+  /* Applies styling to the footer */
+  footer{
+    background-color: #86A789;
+    color: #113946;
+    text-align: center;
+  }
   
 
   
